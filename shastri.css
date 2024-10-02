@@ -1,0 +1,128 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f4f4f4, #eaeaea);
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, #d8640b, #e0e4e9, #049e3f);
+    color: rgb(68, 4, 4);
+    padding: 100px 0;
+    clip-path: ellipse(100% 90% at 50% 0%);
+    
+}
+
+header .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header .hero p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Keyframes for fading animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Biography section styling */
+.bio {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(197, 191, 191);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.bio img.profile-img {
+    width: 250px;
+    height: auto;
+    border-radius: 40%;
+    border: 5px solid #ebd69a;
+    transition: transform 0.4s ease-in-out;
+}
+
+.bio img.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.bio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #2a2251;
+    text-align: left;
+    border-bottom: 2px solid #93c914;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.bio p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #555;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #353232;
+    color: rgb(254, 254, 254);
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .bio {
+        flex-direction: column;
+    }
+
+    header .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    header .hero p {
+        font-size: 1.2rem;
+    }
+}
